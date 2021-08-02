@@ -3,8 +3,9 @@
 ### Run
 
 ```shell
-docker run -d --net=host \
-  -v $PWD/config.json:config.json
+docker run -d --net=host --rm \
+  -v $PWD/config.json:/go/src/app/config.json \
+  --name rtsp-server-example rtsp-server:latest
 ```
 
 ### Description
