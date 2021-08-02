@@ -1,5 +1,12 @@
 # RTSPtoHLSLL
 
+### Run
+
+```shell
+docker run -d --net=host \
+  -v $PWD/config.json:config.json
+```
+
 ### Description
 
 
